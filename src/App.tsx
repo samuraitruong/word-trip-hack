@@ -36,12 +36,9 @@ async function validate(list: string[]) {
 
 function useWordValidate(list: string[]) {
   const [validWords, setValidWord] = useState<string>('');
-  const validateCallback = useCallback(
-    (t: string[]) => {
-      return validate(t);
-    },
-    [validate],
-  );
+  const validateCallback = useCallback((t: string[]) => {
+    return validate(t);
+  }, []);
 
   useEffect(() => {
     async function validateRun() {

@@ -1,29 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
-import { validate } from './Validator';
-import { gen3, gen4, gen5 } from './WordGen';
-
-function useWordValidate(list: string[]) {
-  const [validWords, setValidWord] = useState<string>('');
-  const validateCallback = useCallback((t: string[]) => {
-    return validate(t);
-  }, []);
-
-  useEffect(() => {
-    setValidWord('Please wait ....');
-    async function validateRun() {
-      const valid = await validateCallback(list);
-      setValidWord(valid.join('\n'));
-    }
-    validateRun();
-  }, [validateCallback, list]);
-
-  return validWords;
-}
+import { useWordValidate } from './hooks/UseValidate';
+import { gen3, gen4, gen5, gen6, gen7 } from './services/WordGen';
 
 function App() {
-  const [text, setText] = useState('');
+  const [text, setText] = useState('RTIVAI');
   const [result, setResult] = useState(gen3(text));
   const validWords = useWordValidate(result);
 
@@ -42,7 +24,14 @@ function App() {
         break;
       case 5:
         data = gen5(text);
+        break;
+      case 6:
+        data = gen6(text);
+        break;
+      case 7:
+        data = gen7(text);
     }
+    console.log(len, data);
     setResult(data);
   };
 
@@ -60,6 +49,8 @@ function App() {
           {text.length >= 3 && <li onClick={() => clickMe(3)}>3</li>}
           {text.length >= 4 && <li onClick={() => clickMe(4)}>4</li>}
           {text.length >= 5 && <li onClick={() => clickMe(5)}>5</li>}
+          {text.length >= 6 && <li onClick={() => clickMe(6)}>6</li>}
+          {text.length >= 7 && <li onClick={() => clickMe(7)}>7</li>}
         </ul>
       </div>
       <textarea

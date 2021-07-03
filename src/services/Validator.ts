@@ -23,8 +23,8 @@ export async function validate(list: string[]) {
       }
     }
   };
-
-  await asyncPool(50, list, promiseValidate);
+  const uniqueValus = Array.from(new Set(list));
+  await asyncPool(50, uniqueValus, promiseValidate);
   localStorage.setItem('CACHE', JSON.stringify({ ...cached, ...valid }));
   return Object.entries(valid)
     .filter(([key, value]) => value)

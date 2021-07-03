@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/word-trip-hack/static/css/main.b4004809.chunk.css",
-    "main.js": "/word-trip-hack/static/js/main.49e9e248.chunk.js",
-    "main.js.map": "/word-trip-hack/static/js/main.49e9e248.chunk.js.map",
+    "main.css": "/word-trip-hack/static/css/main.aa58847d.chunk.css",
+    "main.js": "/word-trip-hack/static/js/main.9980b001.chunk.js",
+    "main.js.map": "/word-trip-hack/static/js/main.9980b001.chunk.js.map",
     "runtime-main.js": "/word-trip-hack/static/js/runtime-main.4d2eb690.js",
     "runtime-main.js.map": "/word-trip-hack/static/js/runtime-main.4d2eb690.js.map",
-    "static/js/2.ccd2ff1a.chunk.js": "/word-trip-hack/static/js/2.ccd2ff1a.chunk.js",
-    "static/js/2.ccd2ff1a.chunk.js.map": "/word-trip-hack/static/js/2.ccd2ff1a.chunk.js.map",
+    "static/js/2.6c543dbe.chunk.js": "/word-trip-hack/static/js/2.6c543dbe.chunk.js",
+    "static/js/2.6c543dbe.chunk.js.map": "/word-trip-hack/static/js/2.6c543dbe.chunk.js.map",
     "static/js/3.4355fac7.chunk.js": "/word-trip-hack/static/js/3.4355fac7.chunk.js",
     "static/js/3.4355fac7.chunk.js.map": "/word-trip-hack/static/js/3.4355fac7.chunk.js.map",
     "index.html": "/word-trip-hack/index.html",
-    "static/css/main.b4004809.chunk.css.map": "/word-trip-hack/static/css/main.b4004809.chunk.css.map",
-    "static/js/2.ccd2ff1a.chunk.js.LICENSE.txt": "/word-trip-hack/static/js/2.ccd2ff1a.chunk.js.LICENSE.txt"
+    "static/css/main.aa58847d.chunk.css.map": "/word-trip-hack/static/css/main.aa58847d.chunk.css.map",
+    "static/js/2.6c543dbe.chunk.js.LICENSE.txt": "/word-trip-hack/static/js/2.6c543dbe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4d2eb690.js",
-    "static/js/2.ccd2ff1a.chunk.js",
-    "static/css/main.b4004809.chunk.css",
-    "static/js/main.49e9e248.chunk.js"
+    "static/js/2.6c543dbe.chunk.js",
+    "static/css/main.aa58847d.chunk.css",
+    "static/js/main.9980b001.chunk.js"
   ]
 }

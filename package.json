@@ -1,7 +1,7 @@
 {
   "name": "word-trip-hack",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://samuraitruong.github.io/word-trip-hack",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
